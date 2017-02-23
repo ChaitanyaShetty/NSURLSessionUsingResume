@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="cAP-8v-7rW">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ITA-1N-eCJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="3Nf-Sd-gmi"/>
+                                    <constraint firstAttribute="height" constant="603" id="67x-Oc-9Oz"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6AO-e5-aXW">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Awc-27-LH2"/>
+                                    <constraint firstAttribute="height" constant="2" id="X1O-74-0VV"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6AO-e5-aXW" secondAttribute="trailing" id="3cJ-uv-nK3"/>
+                            <constraint firstItem="6AO-e5-aXW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="GFc-Wf-3r8"/>
+                            <constraint firstItem="ITA-1N-eCJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="MTP-xE-Ev5"/>
+                            <constraint firstItem="ITA-1N-eCJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="UmT-JZ-9Lo"/>
+                            <constraint firstItem="6AO-e5-aXW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eR4-c4-mCZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ITA-1N-eCJ" secondAttribute="bottom" id="nLL-eZ-BbU"/>
+                            <constraint firstItem="6AO-e5-aXW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xln-gQ-bEY"/>
+                            <constraint firstAttribute="trailing" secondItem="ITA-1N-eCJ" secondAttribute="trailing" id="yvI-GI-JOV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dkl-Kt-2Gh">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="KAh-6x-zoE">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fzx-WE-YNF">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="Cancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="APR-qN-UTQ"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Fhc-cJ-mFh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6T5-xE-hIH">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Resume"/>
+                                <connections>
+                                    <action selector="Resume:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qDC-vS-JbV"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cancelButton" destination="Fzx-WE-YNF" id="Bfi-Zy-Gew"/>
+                        <outlet property="imageView" destination="ITA-1N-eCJ" id="75f-HE-Rly"/>
+                        <outlet property="progressView" destination="6AO-e5-aXW" id="qwc-5f-2d8"/>
+                        <outlet property="resumeButton" destination="6T5-xE-hIH" id="0qG-zY-3tw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="821.60000000000002" y="-560.86956521739137"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="MA5-CW-ipj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cAP-8v-7rW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YBW-aj-xp1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="5zg-2J-0LE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vPB-oG-xd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="-560.86956521739137"/>
+        </scene>
+    </scenes>
+</document>
